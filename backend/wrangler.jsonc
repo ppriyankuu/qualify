@@ -1,0 +1,32 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "backend",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-09-03",
+	"compatibility_flags": [
+		"global_fetch_strictly_public"
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "scholarship-db",
+			"database_id": "2b517693-880b-4f8c-ae7a-48ed9dc3ae67"
+		}
+	],
+	"vars": {
+		"JWT_SECRET": "qualify-scholarship-jwt-secret-key-2026",
+		"FRONTEND_URL": "https://qualifiedscholar.pages.dev"
+	},
+	"assets": {
+		// The path to the directory containing the `index.html` file to be served at `/`
+		"directory": "./public"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true
+}

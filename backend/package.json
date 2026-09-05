@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cf-typegen": "wrangler types",
+    "db:migrate": "wrangler d1 execute DB --local --file=./migrations/0001_initial_schema.sql",
+    "db:seed": "tsx scripts/generate-seed-sql.mjs && wrangler d1 execute DB --local --file=./migrations/0002_seed_data.sql",
+    "db:seed:new": "wrangler d1 execute DB --local --file=./migrations/0003_add_more_scholarships.sql",
+    "db:setup": "npm run db:migrate && npm run db:seed",
+    "db:migrate:remote": "wrangler d1 execute scholarship-db --remote --file=./migrations/0001_initial_schema.sql",
+    "db:seed:remote": "tsx scripts/generate-seed-sql.mjs && wrangler d1 execute scholarship-db --remote --file=./migrations/0002_seed_data.sql",
+    "db:seed:new:remote": "wrangler d1 execute scholarship-db --remote --file=./migrations/0003_add_more_scholarships.sql",
+    "db:setup:remote": "npm run db:migrate:remote && npm run db:seed:remote"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.0.0",
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5.5.2",
+    "vitest": "~4.1.0",
+    "wrangler": "^4.129.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.9.1",
+    "hono": "^4.13.5",
+    "jose": "^6.2.11",
+    "zod": "^3.25.76"
+  }
+}
