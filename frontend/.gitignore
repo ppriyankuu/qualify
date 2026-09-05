@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+
+# Environment variables (secrets)
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs and caches
+*.log
+.vercel/
+*.tsbuildinfo   
