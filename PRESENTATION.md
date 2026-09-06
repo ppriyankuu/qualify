@@ -4,11 +4,13 @@ Good morning everyone. My name is Priyanku, and this is my teamate Pranjeet Gogo
 to present a solution to our problem statement, which is a scholarship eligiblity portal.
 So whithout wasting any time, let's just dive into it.
 
-Every year, thousands of deserving students miss out on scholarships—not because they aren't qualified, but because finding and understanding them is a nightmare.
+Every year, thousands of deserving students miss out on scholarships—not because they are not qualified, but because finding and understanding them is a nightmare.
 
-Today, a student has to download 20-page PDF circulars filled with dense bureaucratic language. Then they wonder: *Is my family income below the cutoff? Does my specific course qualify? What documents do I actually need to submit?*
+Students often have to go through long PDF documents filled with complicated language. They have to figure out things like: Is my family income within the limit? Does my course qualify? What documents do I actually to need to submit?
 
-When existing platforms do offer an eligibility checker, they usually give a mysterious 'Not Eligible' result with zero explanation. Students are left confused, frustrated, and running out of time.
+And even when a platform has an eligibility checker, it often just says “Not Eligible” without any proper explanation.
+
+This makes the whole process confusing, frustrating, and easy to miss-especially on deadlines.
 
 That's why we tried to build a platform to solve this one sepcific problem.
 
