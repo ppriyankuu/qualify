@@ -91,5 +91,29 @@ Finally, let me state the deliberate boundaries of our system:
 - We **do not** collect or store sensitive PDF documents. The checklist is strictly for student preparation.
 - We **do not** submit applications or guarantee official approval.
 
-Thank you! We are now open to any questions.
+--- DEMO ----
+
+This is the home page of the website.
+now, as we discussed there are 2 login option. admin and student. we'll start with admin.
+
+this is the admin portal where they can maintain all the available scholarships.
+
+then this is where they can publish a new scholarship by filling the details.
+
+let's move on to the student page. 
+
+this is the student profile where all the student credentials are stored.
+
+and this is the scholarship directory where every scholarship is listed.
+
+when a student goes to a particular scholarship, these are all the information they see. 
+these are the eligibility rules, this is teh document checklist. and this is the link to the official circular.
+
+then as we click on "check my eligibilty".... it gives a final conclusion and the reason behind it.
+
+
+
+now. about the challenge card, which was to add a csv download option. here you can see that option. before downloading, the student can filter out the list based on his/her requirements.
+
+Thank you.
 
