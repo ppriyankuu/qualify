@@ -110,7 +110,7 @@ npm run dev
 cd frontend
 npm install
 
-# Start frontend development server (runs at http://localhost:3000)
+# Start frontend development server (open http://localhost:3000)
 npm run dev
 ```
 
