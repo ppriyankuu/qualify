@@ -1,8 +1,8 @@
 ## 🗣️ Full Presentation Script
 
 Good morning everyone. My name is Priyanku, and this is my teamate Pranjeet Gogoi. And today we are here
-to present the solution to out problem statement. which a scholarship eligiblity portal.
-So whithout wasting any time, lets' just dive into it.
+to present a solution to our problem statement, which is a scholarship eligiblity portal.
+So whithout wasting any time, let's just dive into it.
 
 Every year, thousands of deserving students miss out on scholarships—not because they aren't qualified, but because finding and understanding them is a nightmare.
 
@@ -26,7 +26,7 @@ That's why, for testing this prototype, we've preloaded our database with around
 
 ---
 
-Now for the second login option: the **Student**.
+Now, the second login option: the **Student**.
 
 When a student registers, they fill out a standardized profile once. This holds their core credentials:
 
@@ -44,7 +44,8 @@ Now let's look at the core of the application: **the evaluation pipeline**.
 
 When a student selects a scholarship and opens its dedicated details page:
 
-1. They see the exact eligibility rules recorded in plain text.
+1. They see all the info related to that scholarship; like the amount they are providing, the education level they allow, or the last date to apply. 
+2. they see the exact eligibility rules recorded in plain text.
 2. They see an **interactive Document Checklist**, where they can tick off documents like *Income Certificate* or *Previous Marksheet* as they prepare them. This state is saved per user, without requiring them to upload any sensitive files.
 3. They also see a direct link to the **official notice** for primary verification.
 
