@@ -103,21 +103,22 @@ export default function HomePage() {
       {/* 2. Live Engine Preview / Interactive Showcase Mockup */}
       <section className="max-w-4xl mx-auto">
         <div className="rounded-2xl border-2 sm:border-3 border-black bg-white shadow-neo-lg overflow-hidden">
-          {/* Mockup Header Bar */}
-          <div className="bg-[#FAF7F2] border-b-2 border-black px-4 py-2.5 flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <div className="flex gap-1.5">
-                <span className="w-3 h-3 rounded-full border-2 border-black bg-neo-red inline-block" />
-                <span className="w-3 h-3 rounded-full border-2 border-black bg-neo-yellow inline-block" />
-                <span className="w-3 h-3 rounded-full border-2 border-black bg-neo-green inline-block" />
+
+          {/* Mockup Header Bar - FIXED FOR MOBILE */}
+          <div className="bg-[#FAF7F2] border-b-2 border-black px-3 sm:px-4 py-2.5 flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2 min-w-0">
+              <div className="flex gap-1.5 shrink-0">
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full border-2 border-black bg-neo-red inline-block" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full border-2 border-black bg-neo-yellow inline-block" />
+                <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full border-2 border-black bg-neo-green inline-block" />
               </div>
-              <span className="text-[11px] sm:text-xs font-mono font-bold text-neutral-600 pl-1">
+              <span className="text-[10px] sm:text-xs font-mono font-bold text-neutral-600 truncate">
                 rules-engine.evaluator.preview
               </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
               <span className="flex h-2 w-2 rounded-full bg-neo-green animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-wider text-black">
+              <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-black whitespace-nowrap">
                 Live Deterministic Trace
               </span>
             </div>
@@ -125,21 +126,27 @@ export default function HomePage() {
 
           {/* Mockup Body */}
           <div className="p-4 sm:p-6 space-y-4">
-            {/* Student Context Strip */}
+
+            {/* Student Context Strip - FIXED FOR MOBILE */}
             <div className="rounded-xl border-2 border-black bg-[#FAF7F2] p-3 flex flex-wrap items-center justify-between gap-2 text-xs">
-              <div className="flex flex-wrap items-center gap-2">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
                 <span className="font-extrabold text-neutral-500 uppercase text-[10px]">
                   Sample Student:
                 </span>
                 <span className="font-black text-black">Engineering Undergrad</span>
-                <span className="text-neutral-400">•</span>
+
+                {/* Hidden on mobile so wrapped text looks clean */}
+                <span className="text-neutral-400 hidden sm:inline">•</span>
+
                 <span className="font-bold text-neutral-700">CGPA 8.4</span>
-                <span className="text-neutral-400">•</span>
+                <span className="text-neutral-400 hidden sm:inline">•</span>
                 <span className="font-bold text-neutral-700">Income ₹4.5 Lakhs</span>
-                <span className="text-neutral-400">•</span>
+                <span className="text-neutral-400 hidden sm:inline">•</span>
                 <span className="font-bold text-neutral-700">Category: General</span>
               </div>
-              <Badge variant="pass" size="sm" className="font-black">
+
+              {/* Added shrink-0 so the badge doesn't get compressed */}
+              <Badge variant="pass" size="sm" className="font-black shrink-0">
                 Verified Profile
               </Badge>
             </div>
